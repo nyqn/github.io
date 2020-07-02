@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>git | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Git  环境配置 1234git config --global user.name &quot;username&quot;git config --global user.email &quot;name@email.com&quot;git config --listgit config user.name  获取Git仓库 1234567#加载到仓库的目标路径下操作，使用cd，tab键查看、快速打出路径cd d:cd git_">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git">
+<meta property="og:url" content="http://yoursite.com/2020/07/02/git/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Git  环境配置 1234git config --global user.name &quot;username&quot;git config --global user.email &quot;name@email.com&quot;git config --listgit config user.name  获取Git仓库 1234567#加载到仓库的目标路径下操作，使用cd，tab键查看、快速打出路径cd d:cd git_">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:%5CUsers%5CHELLO%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200628183623317.png">
+<meta property="article:published_time" content="2020-07-02T13:21:33.236Z">
+<meta property="article:modified_time" content="2020-06-29T11:00:04.299Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5CUsers%5CHELLO%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200628183623317.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/02/git/" class="article-date">
+  <time datetime="2020-07-02T13:21:33.236Z" itemprop="datePublished">2020-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p><img src="C:%5CUsers%5CHELLO%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200628183623317.png" alt="image-20200628183623317"></p>
+<ol>
+<li><p>环境配置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"username"</span></span><br><span class="line">git config --global user.email <span class="string">"name@email.com"</span></span><br><span class="line">git config --list</span><br><span class="line">git config user.name</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取Git仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#加载到仓库的目标路径下操作，使用cd，tab键查看、快速打出路径</span></span><br><span class="line"><span class="built_in">cd</span> d:</span><br><span class="line"><span class="built_in">cd</span> git_repository/repo1</span><br><span class="line"><span class="comment"># 1、本地初始化git仓库（生成.git隐藏文件夹）</span></span><br><span class="line">git init</span><br><span class="line"><span class="comment"># 2、远程克隆仓库</span></span><br><span class="line">git <span class="built_in">clone</span> url</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>基本概念</p>
+<ol>
+<li><p>版本库：.git隐藏文件夹，里面存储了许多配置信息，日志信息和文件版本信息等</p>
+</li>
+<li><p>工作目录（工作区）：与.git同级的全部文件夹，也是.git的父文件夹，用于存放代码</p>
+</li>
+<li><p>暂存区（stage）：.git文件夹中的index文件（binary）</p>
+<p>工作区——git add——&gt;暂存区——git commit——&gt;版本库</p>
+</li>
+</ol>
+</li>
+<li><p>工作目录下文件的两种状态</p>
+<ul>
+<li><p>untracked：没有被纳入版本控制</p>
+</li>
+<li><p>tracked:纳入版本控制后的细分状态</p>
+<blockquote>
+<p>Unmodified</p>
+<p>Modified</p>
+<p>Staged</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>本地仓库操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">help</span> status</span><br><span class="line"><span class="comment">#在工作区中执行，查看工作区状态，-s 简洁显示</span></span><br><span class="line">git status</span><br><span class="line">git status -s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 1、添加到暂存区</span></span><br><span class="line">git add fileName</span><br><span class="line">git reset HEAD fileName</span><br><span class="line">git commit -m <span class="string">"备注信息"</span> <span class="comment"># 提示是一般加-m参数，没有默认到vim中修改</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除:git rm命令将文件放入暂存区，然后提交删除</span></span><br><span class="line">git rm fileName</span><br><span class="line">git commit -m <span class="string">"delete"</span></span><br><span class="line"><span class="comment">#方法2</span></span><br><span class="line"><span class="comment">#所以如果直接删除，删除的文件处于untrack状态，但是可以直接使用-a参数提交</span></span><br><span class="line">git commit -a -m <span class="comment"># -a参数，通常可以省略add到暂存区的步骤（直接删除后的文件状态，git会给出明显的提示）</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#创建文件</span></span><br><span class="line">touch .gitignore</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>忽略文件</p>
+<p>排除不需要Git管理的文件，通过在工作区创建.gitignore文件进行配置，格式如下：</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># no .a files</span><br><span class="line">*.a</span><br><span class="line"># but do track lib.a, even though you're ignoring .a files above</span><br><span class="line">!lib.a</span><br><span class="line"># only ignore the TODO file in the current directory, not subdir/TODO</span><br><span class="line">/TODO</span><br><span class="line"># ignore all files in the build/ directory</span><br><span class="line">build/</span><br><span class="line"># ignore doc/notes.txt, but not doc/server/arch.txt</span><br><span class="line">doc/*.txt</span><br><span class="line"># ignore all .pdf files in the doc/ directory</span><br><span class="line">doc/**/*.pdf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>远程仓库操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查询远程仓库,逐级详细</span></span><br><span class="line">git remote</span><br><span class="line">git remote -v</span><br><span class="line">git remote show orgin</span><br><span class="line"></span><br><span class="line"><span class="comment">#clone=init本地仓库+1+2</span></span><br><span class="line">git <span class="built_in">clone</span> url</span><br><span class="line"></span><br><span class="line"><span class="comment">#1、添加远程仓库到本地的当前路径</span></span><br><span class="line">git remote add origin url</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除本地远程仓库记录，不会影响到远程仓库</span></span><br><span class="line">git remote rm localRepository</span><br><span class="line"></span><br><span class="line"><span class="comment">#2、拉取远程仓库内容，柱：fetch不会自动merge，但是文件已经以binary形式存在了.git/object文件夹中，需手动merge，pull则自动merge</span></span><br><span class="line">git fetch name branch <span class="comment">#可以直接 git fetch</span></span><br><span class="line">git merge name/branch <span class="comment">#注意是“/”</span></span><br><span class="line"><span class="comment">#拉取到本地仓库，本地仓库存在文件可能报错无法合并，加参数 --allow-unrelated-histories</span></span><br><span class="line">git pull name branch </span><br><span class="line"></span><br><span class="line"><span class="comment">#推送本地分支到远程仓库</span></span><br><span class="line">git push name branch</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分支操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看branch</span></span><br><span class="line">git branch    <span class="comment">#查看本地分支</span></span><br><span class="line">git branch -r <span class="comment">#查看远程仓库的分支</span></span><br><span class="line">git branch -a <span class="comment">#查看全部分支</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#创建本地分支，注意：以当前所在分支为模板创建分支</span></span><br><span class="line">git branch branchName</span><br><span class="line"></span><br><span class="line"><span class="comment">#切换分支</span></span><br><span class="line">git checkout branchName</span><br><span class="line"></span><br><span class="line"><span class="comment">#推送分支，参考远程仓库操作 【注意推送的是本地存在的分支】</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#合并分支</span></span><br><span class="line">git merge mergedObject <span class="comment"># b分支合并到a分支，就要在a分支下执行该命令</span></span><br><span class="line"><span class="comment">#同文件不同修改后合并会有conflict，需要手动修改文件，然后重新提交</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除分支（本地）</span></span><br><span class="line">git branch -d branchName</span><br><span class="line">git branch -D branchName <span class="comment"># 强制删除修改过却未推送到远程的分支（慎用）</span></span><br><span class="line"><span class="comment">#删除分支（远程）</span></span><br><span class="line">git push origin(name) -d branchName</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>tag</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看标签</span></span><br><span class="line">git tag</span><br><span class="line"></span><br><span class="line"><span class="comment">#创建分支本地</span></span><br><span class="line">git tag tagName</span><br><span class="line"><span class="comment">#本地分支提交</span></span><br><span class="line">git push origin tagName</span><br><span class="line"></span><br><span class="line"><span class="comment">#新建一个分支，指向某个tag</span></span><br><span class="line">git checkout -b [branch] [tag] <span class="comment">#-b表示创建分支并checkout，加个tag表示该tag指向这个分支</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除标签(本地)</span></span><br><span class="line">git tag -d [tag]</span><br><span class="line"><span class="comment">#删除远程标签</span></span><br><span class="line">git push origin	:refs/tags/[tag] <span class="comment">#注意冒号之前有空格</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ssh传输</p>
+<p>基于ssh协议传输时，不同于http协议的账户凭证（凭证管理器），ssh是基于公私钥加解密的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用git提供的命令生成一队公私钥</span></span><br><span class="line">ssh-keygen -t rsa	<span class="comment">#位置：C盘用户下的.ssh下</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+</li>
+</ol>
+<h1 id="tortoisegit"><a href="#tortoisegit" class="headerlink" title="tortoisegit"></a><strong>tortoisegit</strong></h1><p>   图形操作界面，是个人应该都会用</p>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/02/git/" data-id="ckc4twevi0000msuz5r1w89it" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/07/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/02/git/">git</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/02/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
